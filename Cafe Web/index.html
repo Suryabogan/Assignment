@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KirateCafe</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/clock.js"></script>
+	
+</head>
+<body onload="renderTime();">
+
+	<header>
+		
+
+		<nav>
+			<div class="row clearfix">
+				<img src="images/logo2.png" class="logo">
+				<ul class="main-nav" id="check-class">
+					<li><a href="booking.html">BOOKING INFO</li>
+					<li><a href="order.html">HOW TO ORDER</li>
+					<li><a href="check.html">CHECK MORE</li>
+					<li><a href="signup.html">SIGN UP</li>
+
+					
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+			</div>
+		</nav>
+
+		<div class="main-content-header">
+		<h1>WELCOME TO <span class="colorchange">KIRATE CAFE</span>.<br>
+		    FEELING OF CLASSIC</h1>
+		    <a href="order.html" class="btn btn-full">click to order</a>
+		    <a href="signup.html" class="btn btn-half">sign me up now</a>
+		</div>
+		
+		<div id="clockDisplay" class="container">
+		</div>
+		
+	</header>
+
+	
+	<script type="text/javascript">
+		function slideshow(){
+			var x = document.getElementById('check-class');
+			if (x.style.display === "none"){
+				x.style.display="block";
+			}else{
+				x.style.display="none";
+			}
+		}
+	</script>
+	
+
+</body>
+</html>
